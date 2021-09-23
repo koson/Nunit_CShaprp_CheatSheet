@@ -16,7 +16,7 @@ namespace Nunit_CShaprp_CheatSheet
         public void firstforTC()
         {
             //executes before every test case
-            Console.WriteLine("Setup for every test case");
+            //Console.WriteLine("Setup for every test case");
             Assert.Pass("pass");
         }
         [Test]
@@ -26,11 +26,11 @@ namespace Nunit_CShaprp_CheatSheet
            Assert.Pass("Your first passing test");
           
         }
-        [Test]
-        public void TestMethod2()
-        {
-            Assert.Fail("Your second failing test");
-        }
+        //[Test]
+        //public void TestMethod2()
+        //{
+        //    Assert.Fail("Your second failing test");
+        //}
 
         [Test]
         public void TestMethod3()
@@ -41,7 +41,7 @@ namespace Nunit_CShaprp_CheatSheet
         public void lastforTC()
         {
             //executes after every tc
-            Console.WriteLine("post execution for every test case");
+            //Console.WriteLine("post execution for every test case");
             Assert.Pass("pass");
         }
     }

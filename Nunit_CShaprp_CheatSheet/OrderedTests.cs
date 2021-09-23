@@ -81,7 +81,7 @@ namespace Nunit_CShaprp_CheatSheet
         /// The Method name can be anything, probably related to your test case group
         /// </summary>
         /// <param name="test"></param>
-        [TestCaseSource("TestSource")]
+        [TestCaseSource("TestSource"), Ignore("Waiting for resolved")]
         public void Sequence1(TestStructure test)
         {
             test.Test();
@@ -103,7 +103,7 @@ namespace Nunit_CShaprp_CheatSheet
 
         #region Order2 Source
 
-        [TestCaseSource("Order2Test")]
+        [TestCaseSource("Order2Test"), Ignore("Waiting for resolved")]
         public void Sequence2(TestStructure test)
         {
             test.Test();

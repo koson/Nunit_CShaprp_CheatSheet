@@ -124,25 +124,25 @@ namespace Nunit_CShaprp_CheatSheet
         /// <summary>
         /// TestCase: provides a test input data and expected result.
         /// </summary>
-        //[TestCase(1, 1, Result = 2)]
-        //[TestCase(2, 2, Result = 4)]
-        //[TestCase(3, 3, Result = 6)]
-        //public int TestCaseTest(int a, int b)
-        //{
-        //    return (a + b);
-        //}
+        [TestCase(1, 1, ExpectedResult = 2)]
+        [TestCase(2, 2, ExpectedResult = 4)]
+        [TestCase(3, 3, ExpectedResult = 6)]
+        public int TestCaseTest(int a, int b)
+        {
+            return   (a + b) ;
+        }
 
 
         /// <summary>
         /// TestCaseSource: referencing a public property which privides a sequence of test data
         /// </summary>
-        [Test, TestCaseSource("CaseSourceTestData1")]
-        public void CaseSourceTest1( string c)
-        {
-            // Can also specify the class to which the property is found upon.
+        //[Test, TestCaseSource("CaseSourceTestData1")]
+        //public void CaseSourceTest1( string c)
+        //{
+        //    // Can also specify the class to which the property is found upon.
             
-            Assert.That("308865", Is.EqualTo(c));
-        }
+        //    Assert.That("308865", Is.EqualTo(c));
+        //}
         #region Source
         /// <summary>
         /// TestCaseSource attributes can use static properties to return an array of test data
