@@ -26,16 +26,16 @@ namespace Nunit_CShaprp_CheatSheet
         /// A method with 'TestFixtureSetUp' attribute will run once before
         /// the first test case in the 'TestFixture Class' or test class gets executed
         /// </summary>
-        [TestFixtureSetUp]
-        public void TestClassFixture()
-        {
-            Console.WriteLine("Unique Run ID is: " + _runId);
-            //We can have in this section code performing actions like 
-            //Read configuration settings
-            //Login into application
-            //Initialize browser or application
-            //One time setup actions required for test execution
-        }
+        //[TestFixtureSetUp]
+        //public void TestClassFixture()
+        //{
+        //    Console.WriteLine("Unique Run ID is: " + _runId);
+        //    //We can have in this section code performing actions like 
+        //    //Read configuration settings
+        //    //Login into application
+        //    //Initialize browser or application
+        //    //One time setup actions required for test execution
+        //}
 
         /// <summary>
         /// A method with 'SetUp' attribute will run once before every test in TestFixture
@@ -161,12 +161,12 @@ namespace Nunit_CShaprp_CheatSheet
         /// <summary>
         /// ExpectedException defines what exception and how it is configured
         /// </summary>
-        [Test, ExpectedException(typeof(Exception), ExpectedMessage = "Testing", MatchType = MessageMatch.Contains)]
-        public void ExpectedExceptionAttributeTest()
-        {
-            // MessageMatch is an enum of: Contains, Exact, Regex, StartsWith
-            throw new Exception("Testing Expected Exception");
-        }
+        //[Test, ExpectedException(typeof(Exception), ExpectedMessage = "Testing", MatchType = MessageMatch.Contains)]
+        //public void ExpectedExceptionAttributeTest()
+        //{
+        //    // MessageMatch is an enum of: Contains, Exact, Regex, StartsWith
+        //    throw new Exception("Testing Expected Exception");
+        //}
 
         #endregion
 
@@ -188,14 +188,14 @@ namespace Nunit_CShaprp_CheatSheet
         /// <summary>
         /// A method with 'TestFixtureTearDown' attribute will run once after all selected tests execution is completed in TestFixture
         /// </summary>
-        [TestFixtureTearDown]
-        public void TestClassTearDown()
-        {
-            //Kill application instances/processes launched
-            //Logout from the application
-            //Generate test run report  
-            //Free up resources occupied
-        }
+        //[TestFixtureTearDown]
+        //public void TestClassTearDown()
+        //{
+        //    //Kill application instances/processes launched
+        //    //Logout from the application
+        //    //Generate test run report  
+        //    //Free up resources occupied
+        //}
         #endregion
 
     }

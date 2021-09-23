@@ -108,20 +108,20 @@ namespace Nunit_CShaprp_CheatSheet
 
             //A TestStatus with possible values Inconclusive Skipped Passed Failed
             //The Status value should be used in preference to State wherever possible, since the latter will not be available in future releases.
-            var testStatus = TestContext.CurrentContext.Result.Status;
+            //var testStatus = TestContext.CurrentContext.Result.Status;
 
 
             //A test can be in these states: Inconclusive NotRunnable Skipped Ignored Success Failure Error Cancelled
             //The result of the test may be accessed during setup or test execution, but it only has a useful value at in the TearDown method.
-            var testState = TestContext.CurrentContext.Result.State;
+            //var testState = TestContext.CurrentContext.Result.State;
 
             Console.WriteLine(test);
             Console.WriteLine(testName);
             Console.WriteLine(fullName);
             Console.WriteLine(testDirectory);
             Console.WriteLine(workingDirectory);
-            Console.WriteLine(testStatus);
-            Console.WriteLine(testState);
+            //Console.WriteLine(testStatus);
+            //Console.WriteLine(testState);
         }
 
         #endregion

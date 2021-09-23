@@ -269,11 +269,11 @@ namespace Nunit_CShaprp_CheatSheet
             Assert.That(new MemoryStream(), Is.AssignableTo<Stream>()); // Can be assignable to
 
             // String Comparision
-            Assert.That("Foo", Is.StringContaining("o"));
-            Assert.That("Foo", Is.StringContaining("O").IgnoreCase);
-            Assert.That("Foo", Is.StringStarting("F"));
-            Assert.That("Foo", Is.StringEnding("o"));
-            Assert.That("Foo", Is.StringMatching("^[F]")); // Regular ecpression match
+            //Assert.That("Foo", Is.StringContaining("o"));
+            //Assert.That("Foo", Is.StringContaining("O").IgnoreCase);
+            //Assert.That("Foo", Is.StringStarting("F"));
+            //Assert.That("Foo", Is.StringEnding("o"));
+            //Assert.That("Foo", Is.StringMatching("^[F]")); // Regular ecpression match
 
             // Collection Comparison
             Assert.That(new List<int> {1, 2, 3}, Has.All.GreaterThan(0));

@@ -124,13 +124,13 @@ namespace Nunit_CShaprp_CheatSheet
         /// <summary>
         /// TestCase: provides a test input data and expected result.
         /// </summary>
-        [TestCase(1, 1, Result = 2)]
-        [TestCase(2, 2, Result = 4)]
-        [TestCase(3, 3, Result = 6)]
-        public int TestCaseTest(int a, int b)
-        {
-            return (a + b);
-        }
+        //[TestCase(1, 1, Result = 2)]
+        //[TestCase(2, 2, Result = 4)]
+        //[TestCase(3, 3, Result = 6)]
+        //public int TestCaseTest(int a, int b)
+        //{
+        //    return (a + b);
+        //}
 
 
         /// <summary>
